@@ -53,7 +53,10 @@ This command-line application allows the user to:
 Use "npm install inquirer", and "npm install mysql". This connects you yo inquirer, and mySQL. We also use "npm init" to create the JSON file from our package. Finally, "npm console.table" formats our tables. 
 
 ## Run
-Use "npm index.js"
+Use "node index.js"
+
+## Screenshot
+<img width="537" alt="Screen Shot 2020-10-12 at 9 29 57 PM" src="https://user-images.githubusercontent.com/67081309/95815707-1f233a80-0cd2-11eb-8781-96634556092e.png">
 
 ## Questions
 Please contact me using one of the following:
