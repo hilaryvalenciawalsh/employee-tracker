@@ -94,7 +94,7 @@ function viewAllEmployees() {
   connection.query(query, (err, res) => {
     if (err) throw err;
     console.log("\n");
-    console.log("CLICK HERE TO VIEW ALL EMPLOYEES");
+    console.log("ALL EMPLOYEES");
     console.log("\n");
     console.table(res);
     prompt();
@@ -109,7 +109,7 @@ function viewByDepartment() {
   connection.query(query, (err, res) => {
     if (err) throw err;
     console.log("\n");
-    console.log("CLICK HERE TO VIEW EMPLOYEES BY DEPT");
+    console.log("EMPLOYEES BY DEPT");
     console.log("\n");
     console.table(res);
     prompt();
@@ -125,7 +125,7 @@ function viewByManager() {
   connection.query(query, (err, res) => {
     if (err) throw err;
     console.log("\n");
-    console.log("CLICK HERE TO VIEW EMPLOYEES BY MANAGER");
+    console.log("EMPLOYEES BY MANAGER");
     console.log("\n");
     console.table(res);
     prompt();
@@ -143,7 +143,7 @@ async function updateRole() {
           name: "role",
           type: "list",
           choices: () => res.map((res) => res.title),
-          message: "CLICK HERE TO UPDATE EMPLOYEES ROLE",
+          message: "UPDATE EMPLOYEES ROLE",
         },
       ]);
       let roleId;
@@ -175,7 +175,7 @@ function viewAllRoles() {
   connection.query(query, (err, res) => {
     if (err) throw err;
     console.log("\n");
-    console.log("CLICK HERE TO VIEW EMPLOYEE BY ROLE");
+    console.log("VIEW EMPLOYEE BY ROLE");
     console.log("\n");
     console.table(res);
     prompt();
@@ -258,7 +258,7 @@ function remove(input) {
             name: "action",
             type: "list",
             message: "A employee ID need to be entered. View all employees to get" +
-                " the employee ID. Do you know the employee ID?",
+                " the employee ID. Do you have the employee ID, yes or no?",
             choices: [promptQ.yes, promptQ.no]
         }
     ]).then(answer => {
